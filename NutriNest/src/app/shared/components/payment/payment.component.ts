@@ -38,8 +38,9 @@ export class PaymentComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]], // Add Validators
       building: ['', Validators.required],
       unit: ['', Validators.required],
-      company: ['United States', Validators.required],
-      address: ['', [Validators.required]],
+      company: [''],
+      postal: ['', Validators.required],
+      address: [''],
       country: ['Singapore']
     });
   }

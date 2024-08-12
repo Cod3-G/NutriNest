@@ -30,10 +30,11 @@
               <td>${{ order.amount }}</td>
               <td>{{getProductTitlesAndQuantities(order.order)}}</td>
               <td><p>
-                {{ order?.address?.company }}, 
-                {{ order?.address?.address }}, 
+                {{ order?.address?.company }} 
                 {{ order?.address?.building }}, 
-                {{ order?.address?.unit }}
+                {{ order?.address?.unit }},
+                {{ order?.address?.postalCode }},
+                {{ order?.address?.address }} 
               </p></td>
             </tr>
           </tbody>
